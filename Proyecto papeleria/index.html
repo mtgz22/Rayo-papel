@@ -20,6 +20,7 @@
             <button onclick="scrollToSection('ubicacion')">Ubicación principal</button>
             <button onclick="toggleLogin()">Iniciar Sesión</button>
             <button onclick="scrollToSection('base_datos')">Base de Datos</button>
+            <button onclick="redirectInstagram()">Instagram</button>
         </nav>
     </header>
 
@@ -50,7 +51,7 @@
         <section id="ubicacion">
             <h2>Ubicación</h2>
             <p>Estamos ubicados en Cl. 126 #7b51, Bogotá, Colombia.</p>
-            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450"></iframe>
+            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
@@ -115,15 +116,6 @@
         <p>Contacto: <a href="mailto:RayoPapel@gmail.com">RayoPapel@gmail.com</a></p>
     </footer>
 
-    <script src="login.js"></script>
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function toggleLogin() {
-            document.getElementById('container').classList.toggle('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
